@@ -73,7 +73,7 @@ function App() {
             <option value="Cake">Cake</option>
           </select>
         </div>
-      </form>
+      </form> 
 
       <div className="details">
         { state. name ?
