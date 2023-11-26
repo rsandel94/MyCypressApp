@@ -3,7 +3,8 @@
 ### https://bugfender.com/blog/how-to-perform-an-end-to-end-test-of-a-react-app-using-cypress/
 
 ### Intro 1. Building The ReactJS Application
-This section introduces the Cypress e2e test using a ReactJS application. 
+This is my project of building a ReactJS application and running tests using Cypress. I will be going over the steps to set up the application and accessing it with Cypress, then going over the tests.
+
 First I executed the command to create a basic ReactJS app ready to be initialized on a a local host server.
 After some string edits to prompt the user to input a name if they haven't done so, the next step is to replace the code in the App.js file.
 
