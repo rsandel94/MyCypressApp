@@ -7,12 +7,17 @@ In the testing section I will include the code snippets I input along with any e
 https://bugfender.com/blog/how-to-perform-an-end-to-end-test-of-a-react-app-using-cypress/
 
 ### Intro 1. Building The ReactJS Application
-First I executed the command to create a basic ReactJS app ready to be initialized on a a local host server.
-After some string edits to prompt the user to input a name if they haven't done so, the next step is to replace the code in the App.js file.
+First, I executed the command to create a basic ReactJS app ready to be initialized on a local host server. After prompting the user to input a name with necessary string edits, the next step involved replacing the code in the App.js file.
 
-I changed the code as instructed to a ReactJS component that has four inputs: name, age, gender, and food. Each of the inputs is associated with an event handler that will detect any changes made to them. When the user changes any values of these elements, the handleChange method gets called and modifies the component’s state. The changes also show the message based on the state value of the component, so if the state gets modified, the message also gets changed.
+The ReactJS component designed featured four inputs: name, age, gender, and food. Each input was associated with an event handler, the handleChange method, to detect and modify the component’s state based on user interactions. This facilitated real-time updates to the displayed message as the component's state evolved.
 
-Next is to replace the contents of the App.css file as instructed. The changes I input mainly handle the display information of the App.js data. This concludes the initial setup portion of the project, which the Cypress application will build on in the following steps.
+To visually represent the architecture, consider the following bullet points:
+
+* User Interaction: Inputs for name, age, gender, and food choices.
+* Handling: Utilization of the handleChange method to modify the component’s state on user interaction.
+* State-Driven Messaging: Dynamic messaging based on the component’s state changes.
+
+Next, the contents of the App.css file were modified to handle the display information of the App.js data. This setup laid the foundation for the Cypress application to seamlessly automate the testing process, as detailed in the following steps.
 
 ### Intro 2. The End-to-End Test Using Cypress
 In this section I setup the Cypress application and initialize a test run. 
