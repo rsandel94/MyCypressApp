@@ -23,6 +23,8 @@ In this section I change the way Cypress accesses the server to my local server.
 I edit the spec file so that instead of connecting to example.cypress.io, it instead connects to my localhost server and runs an initial test.
 Confirming the test and my local server is accessed successfully I move on to the official tests.
 
+![test0](pic1.PNG)
+
 ### Test 1: The Name Field
 In this section I will include the code snippets I input along with any edits I made. All the information can be accessed in the link provided above.
 
@@ -56,6 +58,8 @@ describe('The Name Field', () => {
     cy.get('.details').should('contain', 'Jane');
   });
 });
+
+![test1](pic2.PNG)
 
 ### Test 2: The Food Field
 The initial code is as follows:
@@ -105,6 +109,8 @@ describe('The food field', () => {
   });
 });
 
+![test2](pic3.PNG)
+
 ### Test 3: The Gender Field
 Now, we check the radio button value and then validate the expectations using the check API.
 The following checks whether the value 'F' has been selected:
@@ -127,6 +133,8 @@ describe('The Gender field', () => {
   });
 });
 
+![test3](pic4.PNG)
+
 ### Test 4: Take a Screenshot
 The final step is to take a screenshot using all the steps from above. The code provided to do so is as follows:
 
@@ -148,5 +156,7 @@ describe('Overall Snapshot', () => {
     cy.screenshot()
   })
 })
+
+![test4](pic5.PNG)
 
 This concludes my project of performing an e2e test of a React app using Cypress.
