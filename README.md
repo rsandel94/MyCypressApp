@@ -1,10 +1,12 @@
-# MyCypressApp
+# MyFullStackExample
 ## How to perform an end-to-end test of a React app using Cypress 
-### https://bugfender.com/blog/how-to-perform-an-end-to-end-test-of-a-react-app-using-cypress/
+
+### About
+This is my project of building a ReactJS application and running tests using Cypress. I will be going over the steps to set up the application and accessing it with Cypress, then going over the tests.
+In the testing section I will include the code snippets I input along with any edits I made. All the code can be accessed in the link provided.
+https://bugfender.com/blog/how-to-perform-an-end-to-end-test-of-a-react-app-using-cypress/
 
 ### Intro 1. Building The ReactJS Application
-This is my project of building a ReactJS application and running tests using Cypress. I will be going over the steps to set up the application and accessing it with Cypress, then going over the tests.
-
 First I executed the command to create a basic ReactJS app ready to be initialized on a a local host server.
 After some string edits to prompt the user to input a name if they haven't done so, the next step is to replace the code in the App.js file.
 
@@ -30,7 +32,6 @@ Confirming the test and my local server is accessed successfully I move on to th
 ![test0](pic1.PNG)
 
 ### Test 1: The Name Field
-In this section I will include the code snippets I input along with any edits I made. All the information can be accessed in the link provided above.
 
 describe('The Name Field', () => {
   it("Doesn't have a name", () => {
@@ -163,4 +164,4 @@ describe('Overall Snapshot', () => {
 
 ![test4](pic5.PNG)
 
-This concludes my project of performing an e2e test of a React app using Cypress.
+In conclusion I was able to build a ReactJS app and have the Cypress application connect to it for testing 
