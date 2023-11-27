@@ -21,8 +21,10 @@ First I launch the Cypress application and set up the specs along with creating 
 This creates file from which all the following tests will be run from, but for now I just run the test spec to confirm the file can be found and run as normal.
 
 ![CypressImg](CypressImg.png)
+Launching the Cypress application
 
 ![Test_case](Test_case.png)
+Running the test case
 
 ### Intro 3. Understanding Test Cases
 In this section I change the way Cypress accesses the server to my local server.
@@ -30,7 +32,7 @@ I edit the spec file so that instead of connecting to example.cypress.io, it ins
 Confirming the test and my local server is accessed successfully I move on to the official tests.
 
 ![test0](pic1.PNG)
-
+Test case of connecting to the local server
 ### Test 1: The Name Field
 
 describe('The Name Field', () => {
@@ -65,6 +67,7 @@ describe('The Name Field', () => {
 });
 
 ![test1](pic2.PNG)
+Test case of testing filled out namespace
 
 ### Test 2: The Food Field
 The initial code is as follows:
@@ -115,6 +118,7 @@ describe('The food field', () => {
 });
 
 ![test2](pic3.PNG)
+confirmation of test cases for all food items
 
 ### Test 3: The Gender Field
 Now, we check the radio button value and then validate the expectations using the check API.
@@ -139,6 +143,7 @@ describe('The Gender field', () => {
 });
 
 ![test3](pic4.PNG)
+Test case of selecting correct gender button
 
 ### Test 4: Take a Screenshot
 The final step is to take a screenshot using all the steps from above. The code provided to do so is as follows:
@@ -163,5 +168,8 @@ describe('Overall Snapshot', () => {
 })
 
 ![test4](pic5.PNG)
+Final test case of taking a screenshot
 
-In conclusion I was able to build a ReactJS app and have the Cypress application connect to it for testing 
+### Conclusion
+
+In conclusion, Cypress proved instrumental in automating the ReactJS application's testing process, offering an intuitive syntax and real-time interactive test runs for robust end-to-end testing. To further elevate the development workflow, integrating Continuous Integration (CI) and Continuous Deployment (CD) through tools like Jenkins or GitHub Actions ensures automatic builds, continuous validation, and streamlined deployments. Cypress seamlessly fits into this CI/CD pipeline, playing a pivotal role in maintaining efficiency and reliability throughout the software development lifecycle.
