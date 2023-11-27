@@ -12,8 +12,6 @@ I changed the code as instructed to a ReactJS component that has four inputs: na
 
 Next is to replace the contents of the App.css file as instructed. The changes I input mainly handle the display information of the App.js data. This concludes the initial setup portion of the project, which the Cypress application will build on in the following steps.
 
-![Setup1](Setup1.png)
-
 ### Intro 2. The End-to-End Test Using Cypress
 In this section I setup the Cypress application and initialize a test run. 
 First I launch the Cypress application and set up the specs along with creating the config files, and creating the initial spec.cy.js file.
