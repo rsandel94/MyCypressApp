@@ -39,7 +39,7 @@ Confirming the test and my local server is accessed successfully I move on to th
 ![test0](pic1.PNG)
 Test case of connecting to the local server
 ### Test 1: The Name Field
-
+```
 describe('The Name Field', () => {
   it("Doesn't have a name", () => {
     cy.get('input[name="name"]').clear();
@@ -52,10 +52,10 @@ describe('The Name Field', () => {
     cy.get('.details').should('contain', 'Jane');
   });
 });
-
+```
 This section first checks whether the expected message appears when the name field has no input, and the second confirms the name appears in the message when a name is imputed into the name field.
 The edits I made to this code chunk is to first connect to the localhost server so it can run the tests at all. The second test also comes with the caveat that the tested name should match the input name, otherwise the test fails.:
-
+```
 describe('The Name Field', () => {
   it("Doesn't have a name", () => {
     cy.visit('http://localhost:3000');
@@ -70,13 +70,13 @@ describe('The Name Field', () => {
     cy.get('.details').should('contain', 'Jane');
   });
 });
-
+```
 ![test1](pic2.PNG)
 Test case of testing filled out namespace
 
 ### Test 2: The Food Field
 The initial code is as follows:
-
+```
 describe('The food field', () => {
   it('Has Pasta', () => {
     cy.get('select').select("Pasta");
@@ -93,9 +93,9 @@ describe('The food field', () => {
     cy.get('.details > p').should('not.contain',"🎂");
   });
 });
-
+```
 This code tests whether the food choice has selected pasta, cake, or pizza from the select function. The code below shows my edits to input the name field along with any previous edits to make the test work:
-
+```
 describe('The food field', () => {
   it('Has Pasta', () => {
     cy.visit('http://localhost:3000');
@@ -121,22 +121,22 @@ describe('The food field', () => {
     cy.get('.details > p').should('not.contain',"🎂");
   });
 });
-
+```
 ![test2](pic3.PNG)
 confirmation of test cases for all food items
 
 ### Test 3: The Gender Field
 Now, we check the radio button value and then validate the expectations using the check API.
 The following checks whether the value 'F' has been selected:
-
+```
 describe('The Gender field', () => {
   it('Has Female value', () => {
     cy.get('[type="radio"]').check('F');
   });
 });
-
+```
 Below are my edits to the code to fill out the rest of the fields:
-
+```
 describe('The Gender field', () => {
   it('Has Female value', () => {
     cy.visit('http://localhost:3000');
@@ -146,21 +146,21 @@ describe('The Gender field', () => {
     cy.get('[type="radio"]').check('F');
   });
 });
-
+```
 ![test3](pic4.PNG)
 Test case of selecting correct gender button
 
 ### Test 4: Take a Screenshot
 The final step is to take a screenshot using all the steps from above. The code provided to do so is as follows:
-
+```
 describe('Overall Snapshot', () => {
   it('takes a screenshot', () => {
     cy.screenshot()
   })
 })
-
+```
 I input all the fields from above and then had the screenshot line at the bottom:
-
+```
 describe('Overall Snapshot', () => {
   it('takes a screenshot', () => {
     cy.visit('http://localhost:3000');
@@ -171,7 +171,7 @@ describe('Overall Snapshot', () => {
     cy.screenshot()
   })
 })
-
+```
 ![test4](pic5.PNG)
 Final test case of taking a screenshot
 
